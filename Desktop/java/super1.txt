@@ -1,0 +1,28 @@
+class sup
+{
+int x,y;
+sup(int x,int y)
+{
+this.x=10;
+this.y=20;
+System.out.println("Super Constructor");
+}
+}
+class sub extends sup
+{
+int z;
+sub(int z)
+{
+super(10,20);
+this.z=z;
+System.out.println("Sub Constructor");
+}
+}
+class super1
+{
+public static void main(String args[])
+{
+sub d=new sub(40);
+System.out.println(d.x+" "+d.y+" "+d.z);
+}
+}

@@ -1,0 +1,32 @@
+/*class enumexample
+{
+public enum season
+{winter,spring,summer,fall}
+public static void main(String args[])
+{
+for(season s:season.values())
+System.out.println(s);
+}
+}*/
+
+class enumexample
+{
+public enum section
+{
+k1604(5),k1605(10),k1606(15);
+private int value;
+private section(int value)
+{
+this.value=value;
+}
+}
+public static void main(String args[])
+{
+section ss=section.k1605;
+System.out.println(ss);
+for(section s:section.values())
+{
+System.out.println(s+" "+s.value);
+}
+}
+}

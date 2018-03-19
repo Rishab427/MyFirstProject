@@ -1,0 +1,26 @@
+import java .time.*;//java.time pakage
+class time
+{
+public static void main(String args[])
+{
+LocalDate t=LocalDate.now();
+LocalTime l=LocalTime.now();
+LocalDateTime t11=LocalDateTime.now(ZoneId.of("Europe/Paris"));//zone_id of europe and paris
+System.out.println(l+"   "+t+"  "+t11);
+
+
+
+LocalDate l1=LocalDate.of(2010,Month.JANUARY,23);
+LocalTime t1=LocalTime.of(22,44,22);
+
+System.out.println(l1+"  "+t1);
+
+LocalDate l2=LocalDate.of(2012,6,21);
+LocalTime t2=LocalTime.of(5,55,23,234);
+System.out.println(l2+"  "+t2);
+
+LocalDate l3=LocalDate.parse("1999-05-29");
+LocalTime t3=LocalTime.parse("11:22:14");
+System.out.println(l3+"  "+t3);
+}
+}
